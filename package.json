@@ -1,13 +1,17 @@
 {
-  "name": "RUE",
+  "name": "rue-backend",
   "version": "1.0.0",
-  "private": true,
+  "description": "Recursive Understanding Engine - Backend API",
+  "main": "src/app.js",
+  "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix aphelion-feynman/rue-backend\" \"npm run dev --prefix aphelion-feynman/rue-frontend\"",
-    "dev:backend": "npm run dev --prefix aphelion-feynman/rue-backend",
-    "dev:frontend": "npm run dev --prefix aphelion-feynman/rue-frontend"
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
   },
-  "devDependencies": {
-    "concurrently": "^9.2.1"
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "openai": "^6.33.0"
   }
 }
