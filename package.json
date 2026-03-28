@@ -1,0 +1,13 @@
+{
+  "name": "aphelion-feynman-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix aphelion-feynman/rue-backend\" \"npm run dev --prefix aphelion-feynman/rue-frontend\"",
+    "dev:backend": "npm run dev --prefix aphelion-feynman/rue-backend",
+    "dev:frontend": "npm run dev --prefix aphelion-feynman/rue-frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
