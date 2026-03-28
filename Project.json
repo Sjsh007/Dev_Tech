@@ -1,0 +1,71 @@
+{
+  "projectName": "Recursive Understanding Engine (RUE)",
+  "description": "A recursive AI learning system that enables deep conceptual understanding through interactive exploration",
+
+  "features": [
+    "Chat-based learning",
+    "Concept extraction",
+    "Recursive exploration",
+    "Understanding score system",
+    "Glossary",
+    "Flowchart visualization",
+    "Flashcards quiz system",
+    "Voice input and output",
+    "File upload support",
+    "Prerequisite learning suggestions"
+  ],
+
+  "ui": {
+    "navbar": ["Classroom", "Tech", "Labs", "Misc"],
+    "leftSidebar": ["Chat History"],
+    "rightSidebar": ["Humanise", "Glossary", "Flowchart", "Polish", "Flashcards"],
+    "main": ["Search Bar", "Answer Display", "Concept Chips", "Learning Path"]
+  },
+
+  "modules": {
+    "chatEngine": "Generates answers using LLM",
+    "conceptExtraction": "Extracts meaningful concepts",
+    "recursiveEngine": "Allows multi-level concept exploration",
+    "scoringSystem": "Calculates understanding score (1-10)",
+    "flowchart": "Visualizes learning journey",
+    "flashcards": "Generates quiz questions and evaluates answers",
+    "voice": "Handles speech-to-text and text-to-speech",
+    "fileUpload": "Handles file/image inputs"
+  },
+
+  "functions": [
+    "getAnswer",
+    "extractConcepts",
+    "explainConcept",
+    "calculateScore",
+    "generateFlashcards",
+    "evaluateAnswers",
+    "generateFlowchart",
+    "getPrerequisites",
+    "speechToText",
+    "textToSpeech"
+  ],
+
+  "scoringLogic": {
+    "range": "1-10",
+    "criteria": [
+      "number of searches",
+      "concept clicks",
+      "depth level",
+      "tool usage",
+      "interaction time"
+    ]
+  },
+
+  "flashcardSystem": {
+    "questions": 10,
+    "optionsPerQuestion": 4,
+    "evaluation": {
+      "<59%": "Very Good",
+      "60-80%": "Silver",
+      ">80%": "Gold"
+    }
+  },
+
+  "highlight": "This system focuses on recursive learning where understanding is built layer by layer instead of static answers"
+}
